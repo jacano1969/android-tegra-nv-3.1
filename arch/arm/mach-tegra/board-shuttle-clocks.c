@@ -278,6 +278,11 @@ static __initdata struct tegra_clk_init_table shuttle_clk_init_table[] = {
 	{ "usbd",		"clk_m",	  12000000,	true },		/* fsl-tegra-udc , utmip-pad , tegra_ehci.0 , tegra_otg - we need this to be always on to always get hotplug events */
 	{ "usb2",		"clk_m",	  12000000,	false},		/* tegra_ehci.1 - Really unused*/
 	{ "usb3",		"clk_m",	  12000000,	true },		/* tegra_ehci.2 - we need this to be always on to always get hotplug events */
+	{ "i2c1",		"clk_m",	    800000,	false},		/* tegra-i2c.0 */
+	{ "i2c2",		"clk_m",	    315789,	false},		/* tegra-i2c.1 */
+	{ "i2c3",		"clk_m",	    800000,	false},		/* tegra-i2c.2 */
+	{ "dvc",		"clk_m",	   2400000,	false},		/* tegra-i2c.3 */
+ 
 	{ NULL,			NULL,		         0,		0},
 }; 
 
